@@ -2,10 +2,12 @@
 
 # Hi there, I'm **Hoang Ngoc Loc** 👋
 
-### Full-Stack Developer | UI/UX Enthusiast
+### Backend Engineer | Node.js & TypeScript | Distributed Systems
 
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/reddevils.1908/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://jcool-portfolio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hoang-ngoc-loc/)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jCool10)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hngloc10@gmail.com)
 
 </div>
 
@@ -13,11 +15,47 @@
 
 ### 🧑‍💻 About Me
 
-- 🔭 I'm a **Full-Stack Developer** passionate about building modern web applications
-- 🚀 Specializing in **React / Next.js** ecosystem and **Node.js** backend
-- 🎨 Strong background in **UI/UX Design** with Adobe Creative Suite & Figma
-- 🌱 Always learning and exploring new technologies
-- 📫 Reach me on [LinkedIn](https://www.linkedin.com/in/hoang-ngoc-loc/) or [Facebook](https://www.facebook.com/reddevils.1908/)
+Backend engineer with 2+ years building production **Node.js / TypeScript** services for international clients — an 18-service HR-tech platform on Kubernetes and an AI compliance SaaS on Azure.
+
+- 🏗️ Strong in **event-driven architecture**, **PostgreSQL correctness under concurrency**, and test-heavy delivery (Testcontainers, gated CI/CD, OpenTelemetry)
+- 🔭 Started full-stack, now focused fully on **backend and distributed systems**
+- 🤖 Building **LLM-powered pipelines** with LangChain / LangGraph, RAG, and vector search
+- 🌏 Comfortable owning services end-to-end and working in English with distributed teams
+- 📫 Reach me at [hngloc10@gmail.com](mailto:hngloc10@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/hoang-ngoc-loc/)
+
+---
+
+### 💼 Experience
+
+**Full-stack Developer — 24H.DEV CO., LTD** · _Jul 2024 – Jul 2026 · Da Nang, Vietnam_
+
+- Owned and shipped production features across **18+ Node.js microservices** on a two-sided recruitment platform (BFF gateways, profile, jobs, messaging, CV-parser, matches-scheduler) deployed on **GKE**
+- Built an **event-driven CDC pipeline** keeping matching and profile data consistent across services in near real time
+- Rebuilt the candidate-search pipeline under production traffic — traced search/profile drift to slow queries and stale-read paths, reshaped indexing and write flow so matches stay correct as volume grows
+- Designed and shipped a **FATCA/CRS compliance platform** for a European fintech: REST + GraphQL on PostgreSQL, Azure AD SSO, and a **LangGraph + Azure OpenAI** classification pipeline with Document Intelligence — cutting filing-preparation time by **60–80%**
+
+**Front-end Developer — MLOpsVN** · _Mar 2023 – Sep 2023 · Remote_
+
+- Built and shipped the official site for **MLOps Marathon 2023**, Vietnam's first MLOps competition — responsive Next.js + SCSS Modules on Vercel: [mlops.vn](https://mlops.vn)
+
+---
+
+### 🚀 Featured Projects
+
+**[jCool E-Commerce Backend](https://github.com/jCool10/jcool-ecommerce-backend)** · [Live](https://jcool-ecommerce.up.railway.app) · `2026`
+
+> NestJS, TypeScript, PostgreSQL + Drizzle, Redis, BullMQ, Meilisearch, S3, Stripe, Docker
+
+- Modular monolith with **7 bounded contexts** and **53 REST endpoints**; Clean Architecture / DDD boundaries enforced in CI by `dependency-cruiser` so any context can be extracted into a service without a schema migration
+- **Concurrency-safe checkout**: stock reserved inside the checkout transaction (no oversell), idempotent Stripe payments (no double-charge), Transactional Outbox → BullMQ with at-least-once delivery and idempotent consumers, payment saga with compensation
+- **1,131 unit + 68 integration tests** on real Postgres/Redis/S3/SMTP via Testcontainers (no DB mocking), gated CI/CD, OpenTelemetry tracing and Prometheus SLO alerts
+
+**[RAG Chat with PDF](https://github.com/jCool10/RAG-chat-with-pdf)** · `2025`
+
+> Express.js, TypeScript, Python FastAPI, LangChain, Milvus, MongoDB, AWS S3
+
+- Two-service RAG system for Q&A over PDFs — Node.js + Express API and a Python FastAPI retrieval service
+- Hybrid search (dense + BM25) on Milvus with LangChain embeddings, JWT auth and S3 storage
 
 ---
 
@@ -25,52 +63,74 @@
 
 **Languages**
 
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-**Frontend**
+**Backend & Architecture**
+
+![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+![Apollo GraphQL](https://img.shields.io/badge/Apollo_GraphQL-311C87?style=for-the-badge&logo=apollo-graphql&logoColor=white)
+![Google Pub/Sub](https://img.shields.io/badge/Cloud_Pub%2FSub-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+
+`REST` · `Microservices` · `Event-driven (CDC, BullMQ)` · `Transactional Outbox` · `Saga` · `Idempotency` · `DDD / Clean Architecture`
+
+**Data**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+
+`Drizzle ORM` · `pgvector` · `Milvus` · `Meilisearch` · `Indexing & query tuning` · `Transactions & concurrency control`
+
+**Cloud & DevOps**
+
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+**Testing & Observability**
+
+![Vitest](https://img.shields.io/badge/Vitest-%236E9F18.svg?style=for-the-badge&logo=vitest&logoColor=white)
+![Testcontainers](https://img.shields.io/badge/Testcontainers-291A3F?style=for-the-badge&logo=docker&logoColor=white)
+![k6](https://img.shields.io/badge/k6-%237D64FF.svg?style=for-the-badge&logo=k6&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-%23000000.svg?style=for-the-badge&logo=opentelemetry&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+**AI / LLM**
+
+![LangChain](https://img.shields.io/badge/LangChain-%231C3C3C.svg?style=for-the-badge&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-%23412991.svg?style=for-the-badge&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-%23191919.svg?style=for-the-badge&logo=anthropic&logoColor=white)
+
+`LangGraph` · `RAG` · `Azure OpenAI` · `Document Intelligence`
+
+**Front-end**
 
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Next JS](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
-![Ant Design](https://img.shields.io/badge/Ant_Design-%230170FE?style=for-the-badge&logo=ant-design&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-**Backend & Database**
+---
 
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+### 🎓 Education
 
-**DevOps & Tools**
-
-![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Webpack](https://img.shields.io/badge/Webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
-
-**Design**
-
-![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe Photoshop](https://img.shields.io/badge/Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
-![Adobe Illustrator](https://img.shields.io/badge/Illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white)
-![Adobe After Effects](https://img.shields.io/badge/After_Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white)
-![Adobe Premiere Pro](https://img.shields.io/badge/Premiere_Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white)
-![Adobe Lightroom](https://img.shields.io/badge/Lightroom-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
+**Da Nang University of Science and Technology** — B.Eng. in Computer Engineering · _2020 – 2025_
 
 ---
 

@@ -25,40 +25,6 @@ Backend engineer with 2+ years building production **Node.js / TypeScript** serv
 
 ---
 
-### 💼 Experience
-
-**Full-stack Developer — 24H.DEV CO., LTD** · _Jul 2024 – Jul 2026 · Da Nang, Vietnam_
-
-- Owned and shipped production features across **18+ Node.js microservices** on a two-sided recruitment platform (BFF gateways, profile, jobs, messaging, CV-parser, matches-scheduler) deployed on **GKE**
-- Built an **event-driven CDC pipeline** keeping matching and profile data consistent across services in near real time
-- Rebuilt the candidate-search pipeline under production traffic — traced search/profile drift to slow queries and stale-read paths, reshaped indexing and write flow so matches stay correct as volume grows
-- Designed and shipped a **FATCA/CRS compliance platform** for a European fintech: REST + GraphQL on PostgreSQL, Azure AD SSO, and a **LangGraph + Azure OpenAI** classification pipeline with Document Intelligence — cutting filing-preparation time by **60–80%**
-
-**Front-end Developer — MLOpsVN** · _Mar 2023 – Sep 2023 · Remote_
-
-- Built and shipped the official site for **MLOps Marathon 2023**, Vietnam's first MLOps competition — responsive Next.js + SCSS Modules on Vercel: [mlops.vn](https://mlops.vn)
-
----
-
-### 🚀 Featured Projects
-
-**[jCool E-Commerce Backend](https://github.com/jCool10/jcool-ecommerce-backend)** · [Live](https://jcool-ecommerce.up.railway.app) · `2026`
-
-> NestJS, TypeScript, PostgreSQL + Drizzle, Redis, BullMQ, Meilisearch, S3, Stripe, Docker
-
-- Modular monolith with **7 bounded contexts** and **53 REST endpoints**; Clean Architecture / DDD boundaries enforced in CI by `dependency-cruiser` so any context can be extracted into a service without a schema migration
-- **Concurrency-safe checkout**: stock reserved inside the checkout transaction (no oversell), idempotent Stripe payments (no double-charge), Transactional Outbox → BullMQ with at-least-once delivery and idempotent consumers, payment saga with compensation
-- **1,131 unit + 68 integration tests** on real Postgres/Redis/S3/SMTP via Testcontainers (no DB mocking), gated CI/CD, OpenTelemetry tracing and Prometheus SLO alerts
-
-**[RAG Chat with PDF](https://github.com/jCool10/RAG-chat-with-pdf)** · `2025`
-
-> Express.js, TypeScript, Python FastAPI, LangChain, Milvus, MongoDB, AWS S3
-
-- Two-service RAG system for Q&A over PDFs — Node.js + Express API and a Python FastAPI retrieval service
-- Hybrid search (dense + BM25) on Milvus with LangChain embeddings, JWT auth and S3 storage
-
----
-
 ### 🛠️ Tech Stack
 
 **Languages**
